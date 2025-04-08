@@ -1,13 +1,13 @@
-import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Layout from './components/Layout'
+import './globals.css'
+import ClientLayout from './components/ClientLayout'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'EMI Calculator',
-  description: 'Calculate EMI or loan tenure with our easy-to-use calculator',
+  description: 'Calculate your EMI or find out how long it will take to repay your loan.',
 }
 
 export default function RootLayout({
@@ -18,8 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Layout>{children}</Layout>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
       </body>
     </html>
-  )
+  );
 }

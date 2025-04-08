@@ -1,96 +1,85 @@
 # EMI Calculator
 
-A modern and interactive EMI (Equated Monthly Installment) calculator built with Next.js. Calculate your loan EMIs or determine the loan tenure based on your preferred EMI amount.
-
-## Technologies Used
-
-- **Frontend Framework**: Next.js 14+ with TypeScript
-- **Styling**: Tailwind CSS with responsive design
-- **UI Components**: 
-  - Headless UI for accessible components
-  - Heroicons for beautiful icons
-- **Animations**: Framer Motion for smooth transitions
-- **Form Handling**: React state management
-- **Code Quality**: ESLint for code consistency
+A modern, responsive EMI (Equated Monthly Installment) calculator built with Next.js, TypeScript, and Tailwind CSS. Calculate your loan EMI or loan tenure with support for multiple currencies.
 
 ## Features
 
-1. **EMI Calculation**
-   - Calculate monthly EMI based on:
-     - Principal amount
-     - Interest rate
-     - Loan tenure
+### Core Functionality
+- Calculate EMI based on Principal, Interest Rate, and Time Period
+- Calculate Time Period based on Principal, Interest Rate, and desired EMI
+- Real-time EMI breakdown with Principal and Interest components
+- Visual representation of EMI data using interactive charts
 
-2. **Time Frame Calculation**
-   - Calculate loan tenure based on:
-     - Principal amount
-     - Interest rate
-     - Desired monthly EMI
+### Multi-Currency Support
+- Support for 10 major currencies:
+  - Indian Rupee (₹)
+  - US Dollar ($)
+  - Euro (€)
+  - British Pound (£)
+  - Japanese Yen (¥)
+  - Australian Dollar (A$)
+  - Canadian Dollar (C$)
+  - Singapore Dollar (S$)
+  - Chinese Yuan (¥)
+  - UAE Dirham (د.إ)
+- Automatic currency formatting based on locale
+- Currency-aware calculations and displays
 
-3. **Detailed Breakdown**
-   - Monthly EMI schedule
-   - Principal component
-   - Interest component
-   - Remaining balance
+### Modern UI/UX
+- Clean, professional interface with intuitive controls
+- Responsive design that works on all devices
+- Dark/Light theme support with smooth transitions
+- Interactive animations and transitions
+- Accessible form controls with proper labeling
 
-4. **User Interface**
-   - Modern and responsive design
-   - Smooth animations
-   - Interactive form elements
-   - Real-time calculations
-   - Mobile-friendly layout
+### Data Export
+- Export EMI schedule to Excel
+- Detailed monthly breakdown including:
+  - EMI amount
+  - Principal component
+  - Interest component
+  - Outstanding balance
+- Summary statistics in exported file
+- Filename includes currency and date for easy reference
+
+## Tech Stack
+- Next.js 13+ with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
+- Chart.js for data visualization
+- XLSX for Excel export functionality
 
 ## Getting Started
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd emi-calculator
-   ```
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/emi-calculator.git
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+2. Install dependencies:
+```bash
+cd emi-calculator
+npm install
+```
 
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
+3. Run the development server:
+```bash
+npm run dev
+```
 
-4. **Open in browser**
-   - Navigate to [http://localhost:3000](http://localhost:3000)
-   - The page will auto-update as you make changes
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Future Enhancements
+## Usage
 
-1. **Additional Features**
-   - Save calculations for future reference
-   - Compare multiple loan scenarios
-   - Export EMI schedule to PDF/Excel
-   - Share calculations via link
-   - Support for different loan types (Home, Car, Personal)
-
-2. **Technical Improvements**
-   - Add unit tests for calculations
-   - Implement server-side state management
-   - Add offline support with PWA
-   - Integrate with backend API for persistence
-   - Add user authentication
-
-3. **UI/UX Enhancements**
-   - Dark mode support
-   - More visualization options (charts/graphs)
-   - Custom themes
-   - Accessibility improvements
-   - Keyboard shortcuts
-
-4. **Business Features**
-   - Multiple currency support
-   - Bank loan integration
-   - Loan recommendation engine
-   - EMI reminder notifications
-   - Loan comparison tools
+1. Select your preferred currency from the dropdown menu
+2. Choose calculation mode:
+   - Calculate EMI: Input principal, interest rate, and loan term
+   - Calculate Time: Input principal, interest rate, and desired EMI
+3. Fill in the required values
+4. Click "Calculate" to see results
+5. View the EMI breakdown chart and table
+6. Export to Excel if needed
 
 ## Contributing
 
@@ -99,7 +88,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Support
-
-For support, please open an issue in the repository.
